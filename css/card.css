@@ -1,0 +1,96 @@
+.card {
+    justify-self: center;
+    align-self: center;
+    background-color: hsl(216, 50%, 16%);
+    width: 80%;
+    border-radius: 20px;
+    display: grid;
+    margin-bottom: 20%;
+}
+.card__img{
+    position: relative;
+    width: 90%;
+    justify-self: center;
+    padding-top: 20px;
+}
+.img__display {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.img__view{
+    position: absolute;
+    top:50%;
+    right: 45%;
+    opacity: 0;
+}
+
+
+/* ACTIVE STATE */
+.card:hover{
+    .img__display{
+        filter: blur(5px);
+    }
+    .img__view{
+        opacity: 100;
+    }
+}
+
+
+.card__info {
+    margin-left: 5%;
+}
+
+.card__name {
+    color: white;
+}
+
+.card__description {
+    color: gray;
+}
+
+.card__buy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy__ETH {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;  
+}
+.buy__time {
+    color: hsl(215, 51%, 70%);
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+}
+.buy__ETH img,
+.buy__time img{
+    padding-right: 1em;
+}
+
+.card__creator {
+    display: flex;
+}
+.creator__avatar{
+    width: 40px;
+    padding: 0% 5% 5%;
+}
+
+.creator__credit{
+    justify-self: center;
+    color: grey
+}
+
+.creator__name{
+    color: white;
+    padding-left: 0.3rem;
+}
+
+
+@media screen and (min-width: 1024px){
+    .card{
+        width: 40%;
+    }
+}
